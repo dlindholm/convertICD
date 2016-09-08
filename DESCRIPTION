@@ -1,0 +1,17 @@
+Package: convertICD
+Type: Package
+Title: ICD code converter
+Version: 0.1.0
+Author: Daniel Lindholm
+Maintainer: Daniel Lindholm <daniel.lindholm@ucr.uu.se>
+Description: This package will convert International Classification of Disease
+    (ICD) codes between ICD-9 and ICD-10. Offers customization of the flexibility in
+    the translation between ICD definitions, and multicore functionality for faster
+    processing of larger datasets.
+License: GPL-3
+Encoding: UTF-8
+Depends:
+    parallel,
+    data.table
+LazyData: yes
+RoxygenNote: 5.0.1
