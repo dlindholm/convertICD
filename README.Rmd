@@ -1,16 +1,8 @@
----
-title: "convertICD package"
-author: "Daniel Lindholm"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# convertICD package
 
 This is the convertICD package, that will convert international classification of disease (ICD)
-codes between ICD10 and ICD9 standards. This is not entirely non-trivial, given that there
-are way more codes in ICD10, entailing more detailed diagnoses. Therefore, the conversion
+codes between ICD10 and ICD9 standards in R. This is not entirely non-trivial, given that there
+are way more codes in ICD10 than ICD9, entailing more detailed diagnoses. Therefore, the conversion
 requires some flexibility in ICD code definitions to work properly. In this package, it is 
 possible to specify how flexible the translation should be. If one ICD code corresponds to 
 several codes in the target definition, only the first of the target codes will be used.
@@ -30,9 +22,10 @@ convertICD("I259")
 
 For unix-flavored systems, multicore functionality is available, which will reduce computation time
 when analyzing larger datasets. See figure below for a comparison between using one core and four cores
-on a MacBook Pro (2010), running MacOSX 10.12, R 3.3.1, with 16 GB RAM:
+on a MacBook Pro (2014, with a 3 GHz Intel Core i7 processor), running MacOSX 10.12, R 3.3.1, with 16 GB RAM:
 
 ![](figure.png?raw=true)
 
-This is a very early version of the package, which should undergo substantial additional testing.
+This is a very early version of the package, which should undergo substantial additional testing before
+put to use.
 
